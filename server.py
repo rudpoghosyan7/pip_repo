@@ -16,8 +16,8 @@ class Server:
         print(f"Server {self.name} is {self.status}") 
 
     def restart(self):
-        self.status = "stopped"
-        self.status = "running"
+        self.stop()
+        self.start()
         print(f"Server {self.name} is restarted!")
 
 
