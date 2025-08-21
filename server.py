@@ -16,3 +16,10 @@ class Server:
         print(f"Server {self.name} is {self.status}") 
 
 
+class DatabaseServer(Server):
+    def __init__(self, name, ip, db_type):
+        super().__init__(name, ip)
+        self.db_type = db_type
+
+    def backup(self):
+        print(f"Backing up {self.db_type} database on {self.name}")
