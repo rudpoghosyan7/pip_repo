@@ -5,11 +5,11 @@ class Server:
         self.status = "stopped"
 
     def start(self):
-        status = "running"
+        self.status = "running"
         print(f"Server {self.name} started")
 
     def stop(self):
-        status = "stopped"
+        self.status = "stopped"
         print(f"Server {self.name} stopped")
 
     def status_info(self):
