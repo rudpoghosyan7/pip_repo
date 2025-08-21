@@ -15,3 +15,4 @@ DBServer.backup()
 StandartServer.stop()
 DBServer.stop()
 
+DBServer.restart()
