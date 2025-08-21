@@ -15,6 +15,12 @@ class Server:
     def status_info(self):
         print(f"Server {self.name} is {self.status}") 
 
+    def restart(self):
+        self.status = "stopped"
+        self.status = "running"
+        print(f"Server {self.name} is restarted!")
+
+
 
 class DatabaseServer(Server):
     def __init__(self, name, ip, db_type):
