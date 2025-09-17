@@ -22,5 +22,4 @@ posting = requests.post(
     json=user_data   # requests will send as JSON automatically
 )
 
-print("Status Code:", posting.status_code)
 print("Response:", posting.json())
