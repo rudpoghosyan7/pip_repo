@@ -24,3 +24,4 @@ posting = requests.post(
 
 print("Status Code:", posting.status_code)
 print("Response:", posting.json())
+print("Response:", posting.json())
