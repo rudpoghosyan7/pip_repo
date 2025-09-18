@@ -1,0 +1,6 @@
+import re
+
+text = "Errors on 192.168.1.10 and 10.0.0.5, please fix!"
+
+ips = re.findall(r"\d+\.\d+\.\d+\.\d+", text)
+print(ips)
